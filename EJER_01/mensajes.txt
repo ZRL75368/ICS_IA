@@ -1,0 +1,6 @@
+Utilice la IA Stitch para generar la web, Mediante una imagen de la misma, le pase el siguiente prompt:
+
+Genera en base a esta imagen, una web identica o lo mas similar posibkle, colores, 
+formas, etc, utilizando unicamente HTML y CSS puro, de manera sencilla.
+
+Depues pase el resultado a ChatGPT y manualmente, elimine partes inecesarias, y deje partes mas pulidas.
