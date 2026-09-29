@@ -1,0 +1,61 @@
+EJERCICIO 1:
+
+1- Punto de entrada y createRoo estan en src/main.jsx, la función createRoot crea la raíz de React para un contenedor DOM específico
+
+2- El ID es root, esta definido en index.html
+
+3- <StrictMode>
+	<App>
+
+4- Visualmente en la pagina no ocurre nada. En la consola de desarrollo, deja de realizar las ejecuciones dobles intencionadas que usa React para detectar efectos secundarios
+
+5- Ejecutan codigo o interpolan variables JS directamente en el marcado
+
+6- Es un Fragmento de React, no genera ningún elemento adicional en el DOM, sirve para agrupar elementos hijos sin añadir nodos innecesario
+
+
+
+EJERCICIO 2:
+
+2.1- Falta un espacio entre el return y la etiqueta
+
+export function saludo() {
+  return<p>¡Hola, clase!</p>;
+}
+
+2.2- JSX exige un único elemento raíz, aquí se devuelven <h2> y un <p> a la vez
+
+export function Tarjeta() {
+  return (
+    <h2>Desarrollo Web en Entorno Cliente</h2>
+    <p>Segundo curso de DAW</p>
+  );
+}
+
+2.3- El componente Pie no está exportado en su archivo por lo que no se puede importar
+
+// Archivo: src/Pie.jsx
+export function Pie() {
+  return <footer>© Departamento de Informática</footer>;
+}
+
+2.4- e exporta como una exportación nombrada, pero se intenta importar por defecto
+
+// Archivo: src/App.jsx
+import { Cabecera } from './Cabecera';
+
+2.5- La variable anioActual está escrita como texto plano dentro del JSX en vez de ir evaluada entre llaves
+
+export function Fecha() {
+  const anioActual = new Date().getFullYear();
+  return <p>Estamos en el año {anioActual}</p>;
+}
+
+
+
+EJERCICIO 4:
+
+1- Solo cambia al recargar la pagina.
+2- Porque el componente se ejecuta y renderiza una sola vez cuando se carga la aplicación. La variable hora captura el instante exacto de ese montaje inicial
+
+
